@@ -6,15 +6,4 @@
   grid-template-columns: 2fr 10fr;
   grid-gap: 5px;
 }
-.header{
-  grid-area: h;
-  background-color: green;
-}
-.nav{
-  grid-area: n;
-  background-color: burlywood;
-}
-.content{
-  grid-area: c;
-  background-color: cornflowerblue;
-}
+

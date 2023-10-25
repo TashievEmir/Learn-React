@@ -8,19 +8,18 @@ import SignIn from './components/authorization/SignIn';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 function App() {
   return (
-    // <BrowserRouter>
-    //     <div className='app-wrapper'/*className="App"*/>
-    //       <Header />
-    //       <NavBar />
-    //       <div className='app-wrapperContent'>
-    //       <Routes>
-    //         <Route path='/dialogs' Component={Dialogs} />
-    //         <Route path='/profile' Component={Profile} />
-    //         </Routes>
-    //       </div>
-    //     </div>
-    // </BrowserRouter>    
-    <SignIn/>
+    <BrowserRouter>
+        <div className='app-wrapper'/*className="App"*/>
+          <Header />
+          <NavBar />
+          <div className='app-wrapperContent'>
+          <Routes>
+            <Route path='/dialogs' Component={Dialogs} />
+            <Route path='/profile' Component={Profile} />
+            </Routes>
+          </div>
+        </div>
+    </BrowserRouter>    
     );
 }
 

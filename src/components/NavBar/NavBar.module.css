@@ -5,4 +5,15 @@
 
 .item {
     color: white;
+    text-decoration: none;
+}
+
+.item .link{
+    color: white;
+    text-decoration: none;
+}
+
+.item .active{
+    color: gold;
+    text-decoration: none;
 }

@@ -3,31 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import state from './redux/state'
+import {addPost} from './redux/state'
 
-let posts = [
-  {id:1, message:'Hi', likesCount: 12 },
-  {id:1, message:'Hey', likesCount: 11 },
-]
-
-let dialogs = [
-  {id:1, name:'Dimych'},
-  {id:2, name:'Andrey'},
-  {id:3, name:'Sveta'},
-  {id:4, name:'Sasha'},
-  {id:5, name:'Viktor'},
-  {id:6, name:'Valera'}
-]
-
-let messages = [
-  {id:1, message:'Hi'},
-  {id:2, message:'Hey'},
-  {id:3, message:'Yo'}
-]
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App posts={posts} dialogs={dialogs} messages={messages}/>
+    <BrowserRouter>
+    <App state={state} addPost={addPost} />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

@@ -4,7 +4,6 @@ import Header from './components/Header/Header';
 import NavBar from './components/NavBar/NavBar';
 import Profile from './components/Profile/Profile';
 import DialogsContainer from './components/Dialogs/DialogsContainer.jsx';
-import SignIn from './components/authorization/SignIn'; 
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 
 function App(props) {
